@@ -16,7 +16,7 @@ let isLoggedIn = false
 let state;
  
 
-// premitive data types
+// primitive data types
  
 // number => 2 to power 53
 // bigint
@@ -27,7 +27,7 @@ let state;
 // symbol => unique
 
 
-// NON-premitive data types 
+// Reference or NON-primitive data types 
 
 // Array
 // Function
