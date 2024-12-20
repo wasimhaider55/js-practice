@@ -77,3 +77,22 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+
+## project 3 Solution
+
+```javascript 
+
+const clock = document.getElementById("clock");
+// const clock = document.querySelector("#clock");
+
+
+setInterval(function () {
+  const date = new Date();
+  // console.log(date.toLocaleTimeString())
+  clock.innerHTML = date.toLocaleTimeString()
+},1000)
+
+
+
+```
