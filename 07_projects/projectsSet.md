@@ -197,3 +197,51 @@ function newGame() {
 }
 
 ```
+
+
+## project 5 Solution
+
+```javascript 
+
+
+
+```
+
+## project 6 Solution
+
+```javascript 
+
+// generate a random color 
+
+const randomColor = function() {
+  const hax = "0123456789ABCDEF";
+
+let color = "#";
+
+for(let i = 0; i < 6 ; i++){
+  color = color +  hax[Math.floor(Math.random() * 16 )]
+}
+return color
+}
+let intervalId;
+
+const  startChangingColor = function () {
+  const start = function () {
+    document.body.style.backgroundColor = randomColor()
+  }
+if(!intervalId){  // if interval is null color will not change
+  intervalId = setInterval(start,1000)
+}
+}
+
+const  stopChangingColor = function () {
+  clearInterval(intervalId)
+  intervalId = null
+
+}
+
+document.getElementById("start").addEventListener("click", startChangingColor)
+
+document.getElementById("stop").addEventListener("click", stopChangingColor)
+
+```

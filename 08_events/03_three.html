@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>chai our code </title>
+</head>
+<body>
+    <h1>Chai aur javascript</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+
+<script>
+
+// const sayDate = (str) => {
+//     console.log(str, "time" , Date.now())
+    
+// }
+// // setInterval(sayDate, 1000 , "wasim");
+// const interValid = setInterval(sayDate, 1000 , "wasim");
+
+const start = function () {
+    document.getElementById("start").addEventListener("click", function () {
+    const sayDate = () => { // arrow function 
+    console.log("time" , Date.now())   
+}
+let interValid = setInterval(sayDate, 1000);
+document.getElementById("stop").addEventListener("click", function () {
+        clearInterval(interValid);
+    })
+})
+}
+start()
+
+
+</script>
+
+</html>
